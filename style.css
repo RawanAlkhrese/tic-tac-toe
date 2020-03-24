@@ -1,0 +1,224 @@
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)) , url("imgs/bg.jpg");
+    background-size: cover;
+    font-family: 'Itim', cursive;
+    color:#2C3E50 ;
+}
+
+/*---------- container ----------*/
+
+.container{
+/*    bring to center , auto meanes right & left are equal */
+    margin: 100px auto;
+    background: white;
+    width: 900px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 #D0D3D4;
+}
+
+/*float left means all divs will be near each other*/
+.container div {
+    float: left;
+}
+
+.container h1 {
+    text-align: center;
+    padding-top: 10px;
+/*    font-size: 30px;*/
+}
+
+.container h1 span {
+    text-align: center;
+    padding-top: 10px;
+    color: #F1948A ;
+}
+/*---------- player 1 ----------*/
+
+/*give each one it is own area */
+/*i have to divide the margin left and right of players and width of game and border so when we combine all the area they will achive 100%  */
+.container .playerone{
+    width: 25%;
+    margin-left: 3%;
+    margin-top: 30px;
+}
+
+/*player 1 score */
+/*first if we want to jumb to the next line we have to make the img as block */
+.container .playerone img{
+    display: block; 
+}
+
+/*span is inline , so we have to make it block so we can play with margi*/
+.container .playerone span.one-score {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 10px;
+/*    sequare area */
+    padding: 0px 30px;
+/*    background-color: red;*/
+    font-size: 20px;
+    color: #566573; 
+    border-bottom: 1px solid #5DADE2;
+    
+    
+}
+/*---------- game area ----------*/
+
+.container .game{
+    width: 43%;
+    height: 300px; 
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+/*top row 1/3 of area */
+.container .game .top-row{
+    width: 100%;
+    height: 33%;
+    border-bottom: 1px solid #AEB6BF;
+}
+
+/*style all the top cells */
+.container .game .top-row div {
+    width: 33%;
+    border-right: 1px solid #AEB6BF ;
+    height: 100%;
+}
+
+/*remove the border for the last cell */
+.container .game .top-row div:nth-child(3){
+    border-right: none;
+}
+
+/*middle row */
+.container .game .middle-row{
+    width: 100%;
+    height: 33%;
+    border-bottom: 1px solid #AEB6BF ;
+}
+
+/*style all the middle cells */
+.container .game .middle-row div {
+    width: 33%;
+    border-right: 1px solid #AEB6BF ;
+    height: 100%;
+}
+
+/*remove the border for the last cell */
+.container .game .middle-row div:nth-child(3){
+    border-right: none;
+}
+
+
+/*bottom row */
+.container .game .bottom-row{
+    width: 100%;
+    height: 33%;
+}
+
+/*style all the middle cells */
+.container .game .bottom-row div {
+    width: 33%;
+    border-right: 1px solid #AEB6BF ;
+    height: 100%;
+}
+
+/*remove the border for the last cell */
+.container .game .bottom-row div:nth-child(3){
+    border-right: none;
+}
+
+/* make the color changer be more softer */
+.container .game .top-row div,
+.container .game .middle-row div,
+.container .game .bottom-row div {
+    
+    transition: .3s ease-in-out;
+}
+
+/*when hover in any cell the color changes */
+.container .game .top-row div:hover,
+.container .game .middle-row div:hover,
+.container .game .bottom-row div:hover{
+    
+    background: #E5E8E8 ;
+    cursor: pointer;
+}
+
+   
+/*---------- player 2 ----------*/
+
+.container .playertwo{
+    width: 25%;
+    text-align: right;
+    margin-right: 3%;
+    margin-top: 30px;
+}
+
+/*player 2 score */
+.container .playertwo img{
+    display: block; 
+    margin-left: 120px;
+}
+
+/*span is inline , so we have to make it block so we can play with margi*/
+.container .playertwo span.two-score {
+    display: inline-block;
+    margin-top: 50px;
+    margin-right: 20px;
+/*    sequare area */
+    padding: 0px 30px;
+    font-size: 20px;
+    color: #566573; 
+    border-bottom: 1px solid #F1C40F;
+
+}
+
+/*---------- buttons ----------*/
+
+.buttons {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: -70px;
+}
+
+.buttons button {
+    color: #2C3E50 ;
+    font-weight: bold;
+    background: #F1948A ;
+    border:none;
+    font-size: 17px;
+    padding: 10px 5px;
+/*    same size */
+    min-width: 130px;
+    border-radius: 5px;
+    cursor: pointer;
+/*    make softer changes*/
+    transition: .3s ease-in-out;
+}
+
+.buttons button:hover {
+    background: #D98880;
+}
+
+/*style first button , reset */
+.buttons button:nth-child(1){
+    margin-right: 5px;
+}
+
+.buttons button.disabled{
+   background: #D98880 ;
+    cursor: not-allowed;
+}
+
+.buttons button.disabled:hover{
+   background: #D98880;
+    
+}
+/*start sec button / play again*/
+.buttons button:nth-child(2){
+    margin-right: 5px;
+}
+
