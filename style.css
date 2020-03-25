@@ -5,6 +5,20 @@ body {
     color:#2C3E50 ;
 }
 
+/*style EQUIVALENT*/
+body span.equivalent {
+   position: absolute;
+    font-size: 70px;
+    background-color:#F1948A ; 
+    top: 10px;
+    left: 500px;
+    padding: 0 10px;
+    color: forestgreen;
+    border-radius: 5px;
+    display: none;
+    margin-bottom: 20px;
+}
+
 /*---------- container ----------*/
 
 .container{
@@ -15,6 +29,7 @@ body {
     height: 400px;
     border-radius: 10px;
     box-shadow: 0 0 20px 0 #D0D3D4;
+    margin-top: 120px
 }
 
 /*float left means all divs will be near each other*/
@@ -33,6 +48,26 @@ body {
     padding-top: 10px;
     color: #F1948A ;
 }
+
+/*when game start the transition of turns between 1 and 2 be more softer*/
+.container .playerone h2 , 
+.container .playertwo h2 ,
+.container .playerone img , 
+.container .playertwo img {
+    
+    transition: .3s ease-in-out;
+}
+
+.container .playerone h4 ,
+.container .playertwo h4 {
+    
+    color: forestgreen;
+    font-size: 20px;
+    position: absolute;
+/*    hide it */
+    display: none;
+}
+
 /*---------- player 1 ----------*/
 
 /*give each one it is own area */
@@ -49,10 +84,11 @@ body {
     display: block; 
 }
 
+
 /*span is inline , so we have to make it block so we can play with margi*/
 .container .playerone span.one-score {
     display: inline-block;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-left: 10px;
 /*    sequare area */
     padding: 0px 30px;
@@ -166,7 +202,7 @@ body {
 /*span is inline , so we have to make it block so we can play with margi*/
 .container .playertwo span.two-score {
     display: inline-block;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-right: 20px;
 /*    sequare area */
     padding: 0px 30px;
@@ -174,6 +210,12 @@ body {
     color: #566573; 
     border-bottom: 1px solid #F1C40F;
 
+}
+
+.container .playertwo h4 {
+ 
+    right: 280px;
+    
 }
 
 /*---------- buttons ----------*/
