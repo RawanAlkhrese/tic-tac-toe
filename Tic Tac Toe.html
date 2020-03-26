@@ -1,76 +1,66 @@
 <html>
-
-<head>
-    <title> Tic Tac Toe </title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Itim&display=swap" rel="stylesheet">
+    <head>
+        <title> Tic Tac Toe </title>
+        <link rel="stylesheet" href="style.css">
+<!--        google font -->
+        <link href="https://fonts.googleapis.com/css?family=Itim&display=swap" rel="stylesheet">
+        <script src="jquery.min.js"></script>
+        <script src="script.js"></script>
     </head>
-<body>
-    <script src="jquery.min.js"></script>
-    <script src="script.js"></script>
-<!--
-    conatiner holds game details 
-    that divded into three columns 
--->
-    <span class="equivalent">  Equivalent</span>
-    <div class="container">
-    <h1> Welcome to <span> Tic Toc Toe</span> Game </h1>
-        
-<!--        col #1 player 1-->
-    <div class="playerone"> 
-        <h2> Player One  </h2>
-<!--        color #5DADE2 93, 173, 226 -->
-        <img src="imgs/x.PNG" height="100" width="100">
-        <h4> WINNER!!</h4>
-        <span class="one-score"> 0 </span>
-        
-        </div>
-        
-<!--        col #2 game -->
-    <div class="game"> 
-<!--        each cell will be a dive , total  is 9 -->
-<!--each row will be a div and each one contains 3 cells (divs)-->
-        
-        <div class="top-row">
-        
-            <div class="top-left"></div>
-            <div class="top-middle"></div>
-            <div class="top-right"></div>
-        
-        </div>
-        <div class="middle-row">
-        
-            <div class="middle-left"></div>
-            <div class="middle-middle"></div>
-            <div class="middle-right"></div>
+    <body>
+        <span class="equivalent">  Equivalent</span>
+        <!-- conatiner holds game details , that divded into three columns  -->
+        <div class="container">
+            <h1> Welcome to <span> Tic Toc Toe</span> Game </h1>
+          
+            <!--        col #1 player 1-->
+            <div class="playerone">
+                <h2> Player One  </h2>
+                <!--        color #5DADE2 93, 173, 226 -->
+                <img src="imgs/x.PNG" height="100" width="100">
+                <!-- when he won , display this -->
+                <h4> WINNER!!</h4>
+                <!--   display score -->
+                <span class="one-score"> 0 </span>
+            </div>
             
-        </div>
-        <div class="bottom-row">
-        
-            <div class="bottom-left"></div>
-            <div class="bottom-middle"></div>
-            <div class="bottom-right"></div>
-            
-        </div>
-        
-        </div>
-        
-<!--        col #3 player 2 -->
-    <div class="playertwo"> <h2> Player Two </h2>
-<!--        color #F1C40F   241, 196, 15 -->
-        <img src="imgs/o.PNG" height="100" width="100">
-        <h4> WINNER!!</h4>
-        <span class="two-score"> 0 </span>
+            <!--        col #2 game -->
+            <div class="game">
+                <!--each row will be a div and each one contains 3 cells (divs)-->
+                <!--        each cell will be a div , total  is 9 -->
+                <div class="top-row">
+                    <div class="top-left"></div>
+                    <div class="top-middle"></div>
+                    <div class="top-right"></div>
+                </div>
+                <div class="middle-row">
+                    <div class="middle-left"></div>
+                    <div class="middle-middle"></div>
+                    <div class="middle-right"></div>
+                </div>
+                <div class="bottom-row">
+                    <div class="bottom-left"></div>
+                    <div class="bottom-middle"></div>
+                    <div class="bottom-right"></div>
+                </div>
+            </div>
 
+            <!--        col #3 player 2 -->
+            <div class="playertwo">
+                <h2> Player Two </h2>
+                <!--        color #F1C40F   241, 196, 15 -->
+                <img src="imgs/o.PNG" height="100" width="100">
+                <!--  when he won , display this -->
+                <h4> WINNER!!</h4>
+                <!--   display score -->
+                <span class="two-score"> 0 </span>
+            </div>
         </div>
-  
-    </div>
-    <div class="buttons">
-    <button class="restart"> Restart Game</button>
-    <button class="again disabled" disabled> Play Again</button>
-    </div>
-    
-    
+        
+        <div class="buttons">
+            <button class="restart"> Restart Game</button>
+            <button class="again disabled" disabled> Play Again</button>
+        </div>
+
     </body>
 </html>
