@@ -1,7 +1,7 @@
 # tic-tac-toe
-HTML , CSS , JS and Jquery
-------------------------------
-![tic-tac-toe](https://github.com/RawanAlkhrese/tic-tac-toe/blob/master/imgs/tic-tac-toe.gif)
+HTML , CSS , JS and Jquery 
+
+![tic-tac-toe](https://github.com/RawanAlkhrese/tic-tac-toe/blob/master/tic-tac-toe.gif)
 ------------------------------
 ## Motivation: 
 Want to imporive my skills and learning Jquery by implementing Tic Tac Toe game 
