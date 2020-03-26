@@ -272,7 +272,7 @@ function twoWinner(){
 //            display WINNER 
             $('.container .playertwo h4').css("display","block");
 //            zoom in 
-            $(".game div div.top-left,  .game div div.middle-left, .game div div.bottom-left").children(".x").css("transform","scale(1.1,1.1)");
+            $(".game div div.top-left,  .game div div.middle-left, .game div div.bottom-left").children(".o").css("filter","brightness(80%)");
 //            for check 
             console.log("o won");
         }
@@ -289,7 +289,7 @@ function twoWinner(){
 //            display WINNER 
             $('.container .playertwo h4').css("display","block");
 //            zoom in 
-            $(".game div div.top-middle,  .game div div.middle-middle, .game div div.bottom-middle").children(".x").css("transform","scale(1.1,1.1)");
+            $(".game div div.top-middle,  .game div div.middle-middle, .game div div.bottom-middle").children(".o").css("filter","brightness(80%)");
 //            for check 
             console.log("o won");
         }
@@ -306,7 +306,7 @@ function twoWinner(){
 //            display WINNER 
             $('.container .playertwo h4').css("display","block");
 //            zoom in 
-            $(".game div div.top-middle,  .game div div.middle-middle, .game div div.bottom-middle").children(".x").css("transform","scale(1.1,1.1)");
+            $(".game div div.top-middle,  .game div div.middle-middle, .game div div.bottom-middle").children(".o").css("filter","brightness(80%)");
 //            for check 
             console.log("o won");
         }
